@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon_io/favicon.ico" type="image/x-icon">
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a38eb0953e.css" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <title>Syed Ahmad Fakrullah - UX/UI & Front End Developer</title>
+</head>
+<body>
+    <main>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="index.html#top">syed ahmad fakrullah</a>
+            </div>
+            <div class="menu">
+                <div class="social-icons">
+                    <a href="https://github.com/sydaf" target=”_blank”><i class="fa-brands fa-github fa-lg nav-anim2"></i></a>
+                    <a href="https://www.figma.com/@sydamd" target=”_blank”><i class="fa-brands fa-figma fa-lg nav-anim2"></i></a>
+                    <a href="https://www.linkedin.com/in/syed-ahmad-fakrullah-bin-syed-mohd-fauzi-67b5031ba/" target=”_blank”><i class="fa-brands fa-linkedin-in fa-lg nav-anim2"></i></a>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-anim"><a href="#projects">projects.</a></li>
+                    <li class="nav-anim"><a href="/Resume Template.pdf" download="Resume- Syed Ahmad Fakrullah">resume.</a></li>
+                    <li class="nav-anim"><a href="/pages/about.html">about.</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    
+        <section class="hero" id="top">
+            <div class="text">
+                <h3>
+                    <span> Talented UX/UI Designer and Front</span>
+                    <span>End Developer with user-focused approach and</span>
+                    <span>proven success. Seeking opportunities to</span>
+                    <span>create impactful and aesthetically pleasing</span>
+                    <span>digital experiences.</span>
+                </h3>
+                <a href="mailto:syedahmadfakhrullah@gmail.com"><button>get in touch</button></a>
+            </div>
+            <img src="/svg/Circley Thing.svg" class="circly" data-value="1" alt="">
+        </section>
+    
+        <section class="projects" id="projects">
+            <div class="marquee">
+                <h2>- projects&nbsp;</h2>
+                <h2>- projects&nbsp;</h2>
+                <h2>- projects&nbsp;</h2>
+                <h2>- projects&nbsp;</h2>
+                <h2>- projects&nbsp;</h2>
+                <h2>- projects&nbsp;</h2>
+                <h2>- projects&nbsp;</h2>
+            </div>
+            <div class="project-grid">
+                <a href="https://shop.esmartgo.my/" target="_blank"><img src="/images/esmart-banner.png" alt="" class="project-anim"></a>
+                <a href="/pages/maisonuts.html"><img src="/images/esmart-project.png" alt="" class="project-anim"></a>
+            </div>
+        </section>
+    
+        <section class="contact">
+            <h2>let's talk.</h2>
+            <form class="form-container" id="contactMe">
+                <div class="name">
+                    <h4>name</h4>
+                    <input type="text" id="from_name" placeholder="Enter your name" required>
+                </div>
+                <div class="email">
+                    <h4>email</h4>
+                    <input type="email" id="email_id" placeholder="Enter your email" required>
+                </div>
+    
+                <div class="message">
+                    <h4>message</h4>
+                    <textarea id="message" cols="30" rows="10" placeholder="What's your message" required></textarea>
+                </div> <br>
+                <button onclick="SendMail()" type="submit">submit</button>
+            </form>
+        </section>
+    
+        <footer class="footer">
+            <p>2023 / Syed Ahmad Fakrullah</p>
+            <p>Let's Build!</p>
+        </footer>
+    </main>
+</body>
+<!-- Burger menu -->
+<script src="/javascript/burger.js"></script>
+<!-- FontAwesome -->
+<script src="https://kit.fontawesome.com/a38eb0953e.js" crossorigin="anonymous"></script>
+<!-- GSAP page animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script src="/javascript/gsapanimation.js"></script>
+<!-- Parallax -->
+<script src="/javascript/parallax.js"></script>
+<!-- EmailJS -->
+<script src="javascript/form.js"></script>
+<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("kkPOlKKANMYtOWfnk");
+   })();
+</script>
+</html>
