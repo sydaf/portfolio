@@ -1,3 +1,15 @@
+let nameForm = document.getElementById("from_name").value;
+const email = document.getElementById('email_id').value;
+const message = document.getElementById('message').value;
+const btn = document.getElementById('submitBtn');
+const form = document.getElementById("contactMe");
+
+function submitForm(event) {
+    event.preventDefault();
+};
+
+form.addEventListener('submit', submitForm)
+
 function SendMail() {
     var params = {
         from_name: document.getElementById("from_name").value,
@@ -10,11 +22,8 @@ function SendMail() {
     }, function(error) {
         alert("Failed! " + res.status)
     });
-}
+};
 
-const form = document.getElementById("contactMe");
-function submitForm(event) {
-    event.preventDefault();
-}
+form.reset();
 
-form.addEventListener('submit', submitForm)
+console.log(nameForm.value);

@@ -75,7 +75,7 @@
     
         <section class="contact">
             <h2>let's talk.</h2>
-            <form class="form-container" id="contactMe">
+            <form class="form-container" id="contactMe" action="/" method="get">
                 <div class="name">
                     <h4>name</h4>
                     <input type="text" id="from_name" placeholder="Enter your name" required>
@@ -89,7 +89,7 @@
                     <h4>message</h4>
                     <textarea id="message" cols="30" rows="10" placeholder="What's your message" required></textarea>
                 </div> <br>
-                <button onclick="SendMail()" type="submit">submit</button>
+                <button id="submitBtn" onclick="SendMail(), reset()" type="submit">submit</button>
             </form>
         </section>
     

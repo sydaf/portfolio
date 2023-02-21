@@ -247,6 +247,11 @@ main {
     opacity: 80%;
 }
 
+.contact .form-container button:disabled {
+    cursor: not-allowed;
+    opacity: 30%;
+}
+
 /* Mobile */
 @media (max-width: 485px) {
     /* hero-section */
