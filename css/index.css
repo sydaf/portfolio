@@ -252,6 +252,66 @@ main {
     opacity: 30%;
 }
 
+.contact .form-container button:disabled:hover {
+    border: 2px solid var(--p-color);
+    cursor: not-allowed;
+    opacity: 30%;
+}
+
+/* green popup */
+.trigger {
+    display: block !important;
+}
+
+.popup-green {
+    display: none;
+    background-color: var(--bg-color);
+    border: 2px solid var(--p-color);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -25%;
+    margin-left: -40%;
+    width: 80%;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.popup-green .popup-grid {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+}
+
+.popup-green i {
+    color: #54B435;
+    font-size: 5rem;
+}
+
+.popup-green p {
+    color: var(--text-white);
+}
+
+.popup-green button {
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    width: 50%;
+    color: var(--p-color);
+    background-color: var(--bg-color);
+    border: 2px solid var(--p-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: all 150ms ease-in-out;
+}
+
+.popup-green button:hover {
+    background-color: #54B435;
+    border: 2px solid transparent;
+    color: var(--text-white);
+}
+
 /* Mobile */
 @media (max-width: 485px) {
     /* hero-section */
